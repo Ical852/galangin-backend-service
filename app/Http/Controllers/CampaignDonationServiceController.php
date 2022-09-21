@@ -28,8 +28,7 @@ class CampaignDonationServiceController extends Controller
                 return ResponseFormatter::error(null, $validator->errors());
             }
 
-            Config::$serverKey = "SB-Mid-server-QvGNSlna9G41nOdjRvYPcY8p";
-            Config::$clientKey = "SB-Mid-client-thJUgy3dhkvfGpYW";
+            
             Config::$isProduction = false;
             Config::$isSanitized = false;
             Config::$is3ds = false;
